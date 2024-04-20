@@ -33,7 +33,7 @@ public class Atividade3 {
 	
 	System.out.println("Salário Liquido: " + (salarioBruto + adicionalNoturno + (horaExtra*5) - descontos));
 	
-	
+	leia.close();
 	
 	
 	}
