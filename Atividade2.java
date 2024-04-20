@@ -29,7 +29,8 @@ public class Atividade2 {
 		nota4 = leia.nextFloat();
 		
 		System.out.println("Média final: " + ((nota1+nota2+nota3+nota4)/4));
-		
+
+		leia.close();
 	}
 
 }
