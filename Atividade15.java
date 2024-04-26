@@ -23,22 +23,25 @@ public class Atividade15 {
 		int idade;
 
 //Exibir para o usuário:		
-		System.out.println("Digite 10 idades:\n");
+		System.out.print("Digite 10 idades:\n");
 		
-//Processamento de dados;
-		for (int i = 0; i <= 9; i++) {
-	        System.out.print("Digite uma idade: ");          
+		System.out.print("Digite uma idade: ");          
+        idade = leia.nextInt();
+		
+		
+//Processamento de dados com laço WHILE;	
+        
+		while (!(idade<0)) {
+			System.out.print("Digite uma idade: ");          
 	        idade = leia.nextInt();
 		
-	        if (idade < 21) {
+	        if (idade < 21 && idade > 0) {
 	            total1++;
 	        } else if (idade > 50) {
 	            total2++;
-	        } else if (idade <= 0) {
-	        	break;
-	        }
-		 }
-	
+	        }    
+		}
+		
 		System.out.println("\nTotal de pessoas menores de 21 anos: " + total1 + "\n");
 		System.out.println("Total de pessoas maiores de 50 anos: " + total2);
 
@@ -46,3 +49,4 @@ public class Atividade15 {
 		
 	}
 }
+
